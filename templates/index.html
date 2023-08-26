@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    {% if session.logged_in %}
+        <p>Welcome, {{ session.username }}!</p>
+        <a href="/logout">Sign Out</a>
+    {% else %}
+        <p>You are not logged in.</p>
+    {% endif %}
+</body>
+</html>
